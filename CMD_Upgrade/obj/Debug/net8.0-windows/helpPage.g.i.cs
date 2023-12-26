@@ -69,7 +69,7 @@ namespace CMD_Upgrade {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CMD_Upgrade;V1.0.0.0;component/helppage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CMD_Upgrade;component/helppage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\helpPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

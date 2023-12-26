@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.Win32;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -49,7 +51,7 @@ namespace CMD_Upgrade
             browseButton.Cursor = Cursors.Hand;
         }
 
-        private void helpButtonClick(object sender, MouseButtonEventArgs e)
+        private void helpButtonClick(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = Window.GetWindow(this) as MainWindow;
 
@@ -58,6 +60,49 @@ namespace CMD_Upgrade
             {
                 mainWindow.window1.Content = new helpPage();
             }
+        }
+
+        private void runClick(object sender, MouseButtonEventArgs e)
+        {
+            int lineNumber = 0;
+            Process oProcess = new Process();
+            lineNumber = 0;
+            oProcess.StartInfo.FileName = "cmd.exe";
+            oProcess.StartInfo.RedirectStandardInput = true;
+            oProcess.StartInfo.RedirectStandardOutput = true;
+            oProcess.StartInfo.RedirectStandardError = true;
+            oProcess.StartInfo.CreateNoWindow = true;
+            oProcess.StartInfo.UseShellExecute = false;
+            string command = commandInput.Text;
+            string line = "";
+            //Debug.WriteLine(command);
+            oProcess.Start();
+            oProcess.StandardInput.WriteLine($"{command}");
+            oProcess.StandardInput.Flush();
+            oProcess.StandardInput.Close();
+            oProcess.WaitForExit();
+            //lineNumber = 0;
+            //output.Text = ""; //empty string
+            /*while ((line = oProcess.StandardError.ReadLine()) != null)
+            {
+            output.Text = $"E{lineNumber}: {line}\n";
+            lineNumber++;
+            }
+            if (lineNumber == 0) //there is no Error
+            {
+            lineNumber = 0;
+            while ((line = oProcess.StandardOutput.ReadLine()) != null)
+            {
+            output.Text += $"{lineNumber}: {line}\n";
+           lineNumber++;
+            }
+            }*/
+            outputDisplay.Text += oProcess.StandardOutput.ReadToEnd() + "\n----------------\n\n";
+        }
+        private void browseClick(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog oOpenFileDialog = new OpenFileDialog();
+            oOpenFileDialog.ShowDialog();
         }
     }
 }
