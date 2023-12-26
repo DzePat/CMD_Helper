@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CMD_Upgrade/1.0.0": {
+        "runtime": {
+          "CMD_Upgrade.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CMD_Upgrade/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
