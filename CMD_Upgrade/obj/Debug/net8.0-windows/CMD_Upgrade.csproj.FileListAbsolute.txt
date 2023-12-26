@@ -19,3 +19,8 @@ C:\Users\Dzedas\source\repos\CMD_Upgrade\CMD_Upgrade\obj\Debug\net8.0-windows\re
 C:\Users\Dzedas\source\repos\CMD_Upgrade\CMD_Upgrade\obj\Debug\net8.0-windows\CMD_Upgrade.pdb
 C:\Users\Dzedas\source\repos\CMD_Upgrade\CMD_Upgrade\obj\Debug\net8.0-windows\CMD_Upgrade.genruntimeconfig.cache
 C:\Users\Dzedas\source\repos\CMD_Upgrade\CMD_Upgrade\obj\Debug\net8.0-windows\ref\CMD_Upgrade.dll
+C:\Users\Dzedas\source\repos\CMD_Upgrade\CMD_Upgrade\obj\Debug\net8.0-windows\CMD_Upgrade.sourcelink.json
+C:\Users\Dzedas\source\repos\CMD_Upgrade\CMD_Upgrade\obj\Debug\net8.0-windows\cmdPage.g.cs
+C:\Users\Dzedas\source\repos\CMD_Upgrade\CMD_Upgrade\obj\Debug\net8.0-windows\cmdPage.baml
+C:\Users\Dzedas\source\repos\CMD_Upgrade\CMD_Upgrade\obj\Debug\net8.0-windows\helpPage.g.cs
+C:\Users\Dzedas\source\repos\CMD_Upgrade\CMD_Upgrade\obj\Debug\net8.0-windows\helpPage.baml

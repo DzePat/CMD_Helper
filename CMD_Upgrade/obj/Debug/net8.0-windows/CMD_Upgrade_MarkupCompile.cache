@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Dzedas\source\repos\CMD_Upgrade\CMD_Upgrade\App.xaml
-11407045341
+3-1372924023
 
-4-252288235
+6417683278
 198-688555687
-MainWindow.xaml;
+cmdPage.xaml;helpPage.xaml;MainWindow.xaml;
 
 False
 
